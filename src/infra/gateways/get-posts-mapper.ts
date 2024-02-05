@@ -3,7 +3,6 @@ import { PostDTO } from "./get-posts-dto";
 
 export class PostMapper {
   static toDomain(raw: PostDTO){
-    console.log(raw)
     return new Post({
       userId: raw.userId,
       body: raw.body,
